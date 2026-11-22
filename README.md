@@ -2,10 +2,6 @@
 
 A command-line tool that fetches and displays a user's top GitHub repositories using the GitHub API. It serves as a non-trivial initial codebase for implementing build automation.
 
-## Setup
-```bash
-pip install -r requirements.txt
-```
 
 ## Usage
 ```bash
@@ -14,70 +10,70 @@ python src/analyzer.py <github_username>
 
 ## How to replicate the build
 
-1. Install dependencies:
+### Install dependencies:
 
 ```bash
 poetry install```
 
-2. Generate the project:
+### Generate the project:
 ```bash
 poetry build```
 
-# How to use
+## How to use
 
-## Build the project
+### Build the project
 
 Create a dist directory containing the wheel and the compressed archive:
 ```bash
 poetry build```
 
-## Test the project
+### Test the project
 
 ```bash
 poetry run pytest```
 
-## Run the project
+### Run the project
 
 ```bash
 poetry run python src/analyzer.py [GitHub_account]```
 
-# Set up static code analysis
+## Set up static code analysis
 
-## Install the static code analysers
+### Install the static code analysers
 
 ```bash
 poetry add --group dev ruff mypy types-requests```
 
-## Run the static code analysers
+### Run the static code analysers
 
 ```bash
 poetry run ruff check src
 poetry run mypy src```
 
-# Pre-commit hooks that trigger the static code analysis
+## Pre-commit hooks that trigger the static code analysis
 
-## Install the pre-commit hook
+### Install the pre-commit hook
 
 ```bash
 poetry add --group dev pre-commit```
 
-## Run the pre-commit
+### Run the pre-commit
 
 ```bash
 poetry run pre-commit install
 poetry run pre-commit run --all-files```
 
-# Unit tests
+## Unit tests
 
-## Install pytest
+### Install pytest
 
 ```bash
 poetry add --group dev pytest```
 
-## Run pytest
+### Run pytest
 
 ```bash
-poetry run pytest -v``
+poetry run pytest -v```
 
 
 
