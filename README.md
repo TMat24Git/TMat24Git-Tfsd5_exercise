@@ -79,5 +79,16 @@ poetry add --group dev pytest
 poetry run pytest -v
 ```
 
+## Generate documentation
 
+### Install pdoc
+ 
+```bash
+poetry add --group dev pdoc
+```
 
+### Run pdoc to produce a html page
+
+```bash
+poetry run pdoc src -o docs/reference
+```
