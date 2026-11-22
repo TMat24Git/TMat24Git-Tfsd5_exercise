@@ -10,14 +10,16 @@ python src/analyzer.py <github_username>
 
 ## How to replicate the build
 
-### Install dependencies:
+### Install dependencies
 
 ```bash
-poetry install```
+poetry install
+```
 
-### Generate the project:
+### Generate the project
 ```bash
-poetry build```
+poetry build
+```
 
 ## How to use
 
@@ -25,55 +27,64 @@ poetry build```
 
 Create a dist directory containing the wheel and the compressed archive:
 ```bash
-poetry build```
+poetry build
+```
 
 ### Test the project
 
 ```bash
-poetry run pytest```
+poetry run pytest
+```
 
 ### Run the project
 
 ```bash
-poetry run python src/analyzer.py [GitHub_account]```
+poetry run python src/analyzer.py <GitHub_account>
+```
 
 ## Set up static code analysis
 
 ### Install the static code analysers
 
 ```bash
-poetry add --group dev ruff mypy types-requests```
+poetry add --group dev ruff mypy types-requests
+```
 
 ### Run the static code analysers
 
 ```bash
 poetry run ruff check src
-poetry run mypy src```
+poetry run mypy src
+```
 
 ## Pre-commit hooks that trigger the static code analysis
 
 ### Install the pre-commit hook
 
 ```bash
-poetry add --group dev pre-commit```
+poetry add --group dev pre-commit
+```
 
 ### Run the pre-commit
 
 ```bash
 poetry run pre-commit install
-poetry run pre-commit run --all-files```
+poetry run pre-commit run --all-files
+```
 
 ## Unit tests
 
 ### Install pytest
 
 ```bash
-poetry add --group dev pytest```
+poetry add --group dev pytest
+```
 
 ### Run pytest
 
 ```bash
-poetry run pytest -v```
+poetry run pytest -v
+```
 
 
 
