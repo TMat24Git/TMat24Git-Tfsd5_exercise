@@ -5,20 +5,13 @@ A command-line tool that fetches and displays a user's top GitHub repositories u
 
 ## Usage
 ```bash
-python src/analyzer.py <github_username>
+python src/analyzer.py <GitHub_account>
 ```
 
-## How to replicate the build
-
-### Install dependencies
+## How to install dependencies
 
 ```bash
 poetry install
-```
-
-### Generate the project
-```bash
-poetry build
 ```
 
 ## How to use
