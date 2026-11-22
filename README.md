@@ -53,3 +53,16 @@ poetry add --group dev ruff mypy types-requests```
 ```bash
 poetry run ruff check src
 poetry run mypy src```
+
+# Pre-commit hooks that trigger the static code analysis
+
+## Install the pre-commit hook
+
+```bash
+poetry add --group dev pre-commit```
+
+## Run the pre-commit
+
+```bash
+poetry run pre-commit install
+poetry run pre-commit run --all-files```
