@@ -83,9 +83,7 @@ def fetch_repos(username: str) -> list[dict[str, Any]]:
     return data
 
 
-def get_top_repos(
-    repos: list[dict[str, Any]], limit: int = 10
-) -> list[dict[str, Any]]:
+def get_top_repos(repos: list[dict[str, Any]], limit: int = 10) -> list[dict[str, Any]]:
     """Sort repositories by stargazers count in descending order.
 
     Args:
