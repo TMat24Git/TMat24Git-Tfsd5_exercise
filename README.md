@@ -66,3 +66,18 @@ poetry add --group dev pre-commit```
 ```bash
 poetry run pre-commit install
 poetry run pre-commit run --all-files```
+
+# Unit tests
+
+## Install pytest
+
+```bash
+poetry add --group dev pytest```
+
+## Run pytest
+
+```bash
+poetry run pytest -v``
+
+
+
