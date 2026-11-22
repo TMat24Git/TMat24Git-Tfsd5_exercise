@@ -40,3 +40,16 @@ poetry run pytest```
 
 ```bash
 poetry run python src/analyzer.py [GitHub_account]```
+
+# Set up static code analysis
+
+## Install the static code analysers
+
+```bash
+poetry add --group dev ruff mypy types-requests```
+
+## Run the static code analysers
+
+```bash
+poetry run ruff check src
+poetry run mypy src```
